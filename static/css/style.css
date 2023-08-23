@@ -9,36 +9,72 @@
 
 body {
     color: #ededed;
+    background-color: #081b29;
 }
 
 .header {
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     padding: 20px 10%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100%; 
+    z-index: 2;
+}
+
+.home-content {
+    max-width: 600px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .logo {
     font-size: 25px;
-    color: #ededed; 
+    color: #ededed;
     text-decoration: none;
-    font-weight: 600; 
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.navbar {
+    display: flex;
 }
 
 .navbar a {
     font-size: 18px;
-    color: #ededed; 
+    color: #ededed;
     text-decoration: none;
-    font-weight: 500; 
-    margin-left: 25px; 
+    font-weight: 500;
+    margin-left: 25px;
     transition: .3s;
 }
+
+/**.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+} */ 
+
+/**.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: .3s;
+} */
 
 .navbar a:hover,
 .navbar a.active {
@@ -46,18 +82,17 @@ body {
 }
 
 .home {
-    height: 100vh;
-    background: url('/static/images/unsplash.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100vh; 
+    background-position: right top;
     display: flex;
     align-items: center;
     padding: 0 10%;
 }
 
-.home-content {
+/**.home-content {
     max-width: 600px;
-}
+    z-index: 2;
+} */
 
 .home-content h1 {
     font-size: 56px;
@@ -73,13 +108,14 @@ body {
 
 .home-content p {
     font-size: 16px;
-    margin: 20ox 0 40px;
+    margin: 20px 0 40px;
+    max-width: 500px;
 }
 
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;
-    width: 345px; 
+    width: 345px;
     height: 50px;
 }
 
@@ -93,7 +129,7 @@ body {
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
-    font-size: 19px; 
+    font-size: 19px;
     color: #081b29;
     text-decoration: none;
     font-weight: 600;
@@ -119,10 +155,10 @@ body {
 }
 
 .btn-box a::before {
-    content: ''; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 0;
     height: 100%;
     background: #081b29;
@@ -138,7 +174,7 @@ body {
 .home-sci {
     position: absolute;
     bottom: 48px;
-    width: 170px; 
+    width: 170px;
     display: flex;
     justify-content: space-between;
 
@@ -182,12 +218,34 @@ body {
     width: 100%;
 }
 
-.home-imghover {
+/**.home-imghover {
     position: absolute;
     top: 0;
-    right: 30px; 
+    right: 30px;
     width: 500px;
     height: 100%;
     background: transparent;
     border: 2px solid;
+    transition: 3s;
 }
+
+.home-imghover:hover {
+    background: transparent;
+} */
+
+.home-imghover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* Align the image to the right side of the screen */
+    width: 50%;
+    /* Adjust the width as desired */
+    height: 100%;
+    background-image: url('/static/images/unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(70%);
+    z-index: 1;
+    /* border: 2px solid; */
+}
+
