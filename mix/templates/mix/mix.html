@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Mix{% endblock %}
+
+{% block content %}
+
+<div class="home">
+    <div class="home-content">
+    </div>
+    <form method="POST" action="{% url 'mix' %}">
+        {% csrf_token %}
+        <ul>
+            <li>
+                <label for="num_stems">Number of Stems:</label>
+                <input type="number" id="num_stems" name="num_stems">
+            </li>
+            <li>
+                <label for="num_days">Number of Days:</label>
+                <input type="number" id="num_days" name="num_days">
+            </li>
+            <li>
+                <button class="submit-btn" type="submit">Submit</button>
+            </li>
+        </ul>
+        {% if price %}
+        <p>Price: {{ price }}</p>
+        {% endif %}
+    </form>
+    <h1>Hello</h1>
+    <p>Price: {{ price }}</p>
+    {% if price %}
+    <p>Price: {{ price }}</p>
+    {% endif %}
+</div>
+
+{% endblock %}
