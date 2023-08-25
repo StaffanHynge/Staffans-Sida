@@ -32,6 +32,14 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-staffanhynge-staffans-si-oz2awxbl5u.us2.codeanyapp.com']
 
+CORS_ORIGIN_WHITELIST = [
+    '8000-staffanhynge-staffans-si-oz2awxbl5u.us2.codeanyapp.com',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-staffanhynge-staffans-si-oz2awxbl5u.us2.codeanyapp.com'
+]
+
 
 # Application definition
 
@@ -48,6 +56,10 @@ INSTALLED_APPS = [
     'songs',
     'mix',
     'booking',
+
+
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -108,6 +120,11 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Choose the template pack you want to use (e.g., 'bootstrap4', 'bootstrap5')
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'  # Set the default template pack
+
 
 
 # Internationalization

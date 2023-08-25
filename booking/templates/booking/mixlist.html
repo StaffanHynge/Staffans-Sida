@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="home">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-8">
+
+    {% for mix in mixes %}
+
+    <div class="card" style="width: 18rem;">
+        <a href="" style="text-decoration: none;"></a>>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{ mix.name }}</li>
+            <li class="list-group-item">The mix is ready in {{ mix.time }}</li>
+            <li class="list-group-item">{{ mix.stems }} stems</li>
+            <li class="list-group-item">{{ mix.price }} kr</li>
+        </ul>
+        </a>
+    </div>
+    {% endfor %}
+    </div>
+    </div>
+</div>
+{% endblock %}
