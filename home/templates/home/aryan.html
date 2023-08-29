@@ -1,5 +1,5 @@
 {% extends 'base_2.html' %}
-
+{% load static %}
 {% block content %}
  <header class="header_2">
     <a href="" class="logo_2">Aryan 
@@ -52,6 +52,76 @@
             praesentium.</p>
             <a href="" class="button">Read More</a>
     </div>
- </section>
+ </section> 
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>My Songs</h1>
+        <iframe style="border-radius:22px"
+            src="https://open.spotify.com/embed/playlist/0Frnmjm2ZqhfIWajU23fKL?utm_source=generator" width="100%" height="352"
+            frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+</section>
+
+    <h1>Scan the QR Code to make a payment using Swish</h1>
+    <img src="swish_qr_code.png" alt="Swish QR Code">
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <!--Card 1-->
+            <div class="row">
+                
+                    <div class="card m-3" style="width: 18rem;" >
+                        <div class="col">
+                        <img class="card-img-top" src="/static/images/unsplash.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            <!--Card 2-->
+            <div class="card m-3" style="width: 18rem;">
+                <div class="col">
+                <img class="card-img-top" src="/static/images/unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+            </div>
+            <!--Card 3-->
+            <div class="card m-3" style="width: 18rem;">
+                <div class="col">
+                <img class="card-img-top" src="/static/images/unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+            </div>
+            <!--Card 4-->
+            <div class="card m-3" style="width: 18rem;">
+                <div class="col">
+                <img class="card-img-top" src="/static/images/unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock %}
