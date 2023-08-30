@@ -81,9 +81,14 @@ section {
     align-items: center;
 }
 
+.home-img {
+    margin-left: 50px;
+    /* Adjust the value as needed */
+}
+
 .home-img img {
     width: 35vw;
-
+    border-radius: 10%;
 }
 
 .home-content h3 {
@@ -146,7 +151,9 @@ span {
 
 .button:hover {
     box-shadow: none;
+    text-decoration: none;
 }
+
 
 /* About Section */ 
 
@@ -158,8 +165,13 @@ span {
     background: var(--second-bg-color);
 }
 
+.about-img {
+    margin-right: 50px;
+}
+
 .about-img img {
     width: 35vw;
+    border-radius: 10%;
 }
 
 .heading {

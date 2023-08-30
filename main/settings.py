@@ -41,7 +41,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-staffanhynge-staffans-si-oz2awxbl5u.us2.codeanyapp.com'
 ]
 
-# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 # EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
 # EMAIL_HOST_USER = 'b0530514b5552b'
