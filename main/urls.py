@@ -25,4 +25,5 @@ urlpatterns = [
     path('songs/', include('songs.urls')),
     path('mix/', include('mix.urls')),
     path('booking/', include('booking.urls')),
+    path('contact/', include('contact.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,0 +1,33 @@
+{% extends 'base_2.html' %}
+
+{% block content %}
+
+<header class="header_2">
+    <a href="" class="logo_2">Aryan
+    </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar_2">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Songs</a>
+        <a href="">Mix</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Contact Me</h1>
+        <form action="." method="post">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button>Submit</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

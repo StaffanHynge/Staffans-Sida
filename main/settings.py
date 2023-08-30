@@ -40,6 +40,11 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-staffanhynge-staffans-si-oz2awxbl5u.us2.codeanyapp.com'
 ]
 
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'b0530514b5552b'
+EMAIL_HOST_PASSWORD = '64717cfadc208b'
+EMAIL_PORT = '2525'
 
 # Application definition
 
@@ -56,6 +61,7 @@ INSTALLED_APPS = [
     'songs',
     'mix',
     'booking',
+    'contact',
 
 
     'crispy_forms',
