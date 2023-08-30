@@ -28,7 +28,8 @@ if os.path.exists('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-staffanhynge-staffans-si-oz2awxbl5u.us2.codeanyapp.com']
 
@@ -41,10 +42,14 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 # EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = 'b0530514b5552b'
-EMAIL_HOST_PASSWORD = '64717cfadc208b'
-EMAIL_PORT = '2525'
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = 'b0530514b5552b'
+# EMAIL_HOST_PASSWORD = '64717cfadc208b'
+# EMAIL_PORT = '2525'
+# EMAIL_USE_TLS = True  # Enable TLS encryption, if required by your email service provider
+# EMAIL_USE_SSL = False 
+
 
 # Application definition
 
