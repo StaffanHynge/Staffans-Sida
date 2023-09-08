@@ -19,14 +19,21 @@
 
 <section class="home" id="home">
     <div class="home-content">
-        <h1>Contact Me</h1>
-        <form action="." method="post">
+        <!--<h1>Contact Me</h1>
+        <form action="{% url 'contact' %}" method="post">
             {% csrf_token %}
 
             {{ form.as_p }}
 
             <button>Submit</button>
-        </form>
+        </form>-->
+    
+
+    <form method="post" action="{% url 'contact' %}">
+        {% csrf_token %}
+        <textarea name="message" placeholder="Message..."></textarea>
+        <input type="submit" />
+    </form>
     </div>
 </section>
 

@@ -41,7 +41,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-staffanhynge-staffans-si-oz2awxbl5u.us2.codeanyapp.com'
 ]
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 # EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
 # EMAIL_HOST_USER = 'b0530514b5552b'
@@ -49,6 +49,13 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # EMAIL_PORT = '2525'
 # EMAIL_USE_TLS = True  # Enable TLS encryption, if required by your email service provider
 # EMAIL_USE_SSL = False 
+
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_HOST_USER = 'staffanhynge@hotmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
 # Application definition

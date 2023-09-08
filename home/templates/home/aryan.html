@@ -200,13 +200,7 @@
             <input type="submit" value="Send Message" class="button">
         </form>
     </section>
-
-   <!-- <script src="/static/js/script.js"></script>-->
-
-    {% block postloadjs %}
-    {{ block.super }}
-    {% include 'static/js/script.js' %}
-    {% endblock %}
+<script src="{% static '/js/script.js' %}"></script>
 
 
 {% endblock %}
